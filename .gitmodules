@@ -1,0 +1,6 @@
+[submodule "grog_dsp"]
+	path = grog_dsp
+	url = https://github.com/HITOA/grog_dsp
+[submodule "grog_audio_plugin_client"]
+	path = grog_audio_plugin_client
+	url = https://github.com/HITOA/grog_audio_plugin_client
