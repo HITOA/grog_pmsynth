@@ -1,0 +1,16 @@
+with import <nixpkgs> {
+  config.allowUnfree = true;
+};
+pkgs.mkShell {
+  nativeBuildInputs = with pkgs; [ 
+    cmake
+    gdb
+    pkg-config
+  ];
+
+  NIX_LD_LIBRARY_PATH = lib.makeLibraryPath [
+    stdenv.cc.cc
+  ];
+
+  NIX_LD = lib.fileContents "${stdenv.cc}/nix-support/dynamic-linker";
+}
