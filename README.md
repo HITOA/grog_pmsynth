@@ -8,7 +8,7 @@ TODO NODE LIST (links are starting point):
     - Single reed woodwind generator node (https://ccrma.stanford.edu/~jos/pasp/Single_Reed_Instruments.html)  
     - Parameterized sampler (with ability to randomize pitch, length, and stuff)  
     - Convolution operation node  
-    - Helmholtz resonance node (Not sure if it's best to simply use a specific ir with convolution instead..)  
+    - Helmholtz resonance node (Probably dynamically generated ir and convolution ? not sure what is cheaper)  
     - Basic node (Add, Sub, Delay)  
     - Basic generator node (Noise, Saw, Square, Sin)  
     - Distortion node  
